@@ -1,0 +1,46 @@
+# Public
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My super site!</title>
+</head>
+<body>
+  <h1>My super site</h1>
+  
+  <div id="map" style="width:400px;height:400px;background:yellow"></div>
+  <script>
+  $.get('',function(data,status){
+    alert(data.query.results.item.title);
+    alert(data.query.results.item.condition.temp);    
+  </script>
+  
+       <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas> 
+  
+  <script>
+    var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+ctx.fillstyle="#808000";  
+ctx.fillRect(x,y,,largeur,hauteur); 
+  </script>
+  
+  
+  <script>
+  function myMap() {
+    var mapOptions = {
+      center: new google.maps.LatLng(51.5, -0.12),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+    var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCm-Mkwk5L-lmg0_oG0nu-2PfM7T-pYQJM &callback=myMap"></script>
+</body>
+</html>
