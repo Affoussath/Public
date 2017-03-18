@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forum</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  </head>
+  <body onload= chargement()>
+    <h1 class="text-center">Bienvenu au Forum</h1>
+	
+	<h2 class="text-center">Voici les thèmes disponibles</h2>
+		
+	<INPUT type=button   class= "ajouter" id= "BtnAjouterTheme" onClick="PromptMessage()" Value="Ajouter un thème">
+ 	
+	<div class="articles" id= "Champ">
+		<div class = "article">
+			<img></img>
+			<a href = "Cuisine.html" target = "blank">Cuisine</a>
+		</div>
+	</div>
+	<p></p>
+	<img class= "text-center" src="./res/logo.jpg"></img>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/jQuery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Forum.js"></script>
+	
+  </body>
+  
+</html>

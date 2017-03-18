@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuisine</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1 class="text-center">Types de Cuisine</h1>
+	
+	
+ 	<INPUT type=button   class= "ajouter" id= "BtnAjouterTheme" onClick="CreerPost()" Value="Ajouter un Post">
+ 
+	<div class="articles" id="champ">
+		<div class = "article">
+			<p> J'aime la cuisine Thailandaise</p>
+			<div class="commentaire" id = "1" ></div>
+			<input class= "btn" type="Button" onclick = "creerCommentaire()" Value = "ajouter un commentaire" id = "2">
+		</div>
+		<p></p>
+		<div class = "article">
+			<p> Fais gaffe a tes hemorroides </p>
+			<div class="commentaire" id = "3">
+			<p>T'es con</p>
+			</div>
+			<input class= "btn" type="Button" onclick = "creerCommentaire()" Value = "ajouter un commentaire" id = "4">
+			</div>
+		</div>
+		<p></p>
+	</div>
+	
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/jQuery.min.js"></script>
+    <!--<script src="js/bootstrap.js"></script>-->
+	<script src="js/Forum.js"></script>
+	<img class= "text-center" src="./res/logo.jpg"></img>
+  </body>
+  
+</html>
